@@ -1,0 +1,149 @@
+{% extends 'base.html' %} {% block title %}Home Page{% endblock %} 
+{% block mainstuff %} {% load static %}
+<div id="home" class="container mt-2">
+  <div class="row mt-5">
+    <div class="col-md-3">
+      <div class="card card-body h-100">
+        <img
+          src="{% static 'images/mepic.jpg' %}"
+          alt="my profile photo"
+          class="prof-img"
+        />
+        <hr/>
+        <h4>Munyi Victor</h4>
+        <p>A passionate fullstack developer from Embu, Kenya.</p>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="card card-body h-100">
+        <h4>My coding journey</h4>
+        <hr/>
+        <p>
+          I started learning coding first when I joined the university, back in 2021, to persue BSc. Computer Science. SInce then to date, I have learnt a lot of technologies and acquired several skills in different areas like web design an development and mobile development. I have also mastered several programming languages and frameworks like JavaScript, Python, ReactJS, VueJS, Django and NodeJS(ExpressJS).
+        </p>
+        <p>
+          I have contributed to several coding challenges in hackathons and joined developers clubs to help me gain more skills and experiences. The clubs include the Google Developers Students Club (GDSC). By also attending developers' seminars such as the DevFests - in Kisii, Nairobi and Kisumu - I have been able to get mentorship and guidance concerning modern technology, which makes me very updated on the modern technology.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-6">
+      <div class="card card-body h-100">
+        <h4>How I learn</h4>
+        <hr/>
+        <p>
+          Apart from my formal university degree program, I learn by going through a bunch of online courses and documentaries and also watching related YouTube videos and practicing everything I learn in real projects. This helps me master the skills and be able to apply them over and over again as I gain perfection. 
+        </p>
+        <p>I never stop coding, because coding is my life. Solving problems is my passion. That's why I keep exploring new features and digging deeper on what I already know to make sure I get the most out of everything.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-body h-100">
+        <h4>My overall skills</h4>
+        <hr/>
+        <p>I have acquired skills in many areas like the frontend, backend and database design and implementation. I have also skills in version control like Git and Github. Here is a breakdown:</p>
+        
+        <ul class="d-flex gap-5">
+            <li>
+              <h5>Frontend</h5>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+              </ul>
+            </li>
+            <li>
+              <h5>Backend</h5>
+              <ul>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>Python</li>
+                <li>Django</li>
+              </ul>
+            </li>
+            <li>
+              <h5>Database</h5>
+              <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-6">
+      <div class="card card-body h-100">
+        <h4>Projects I have made</h4>
+        <hr/>
+        <ul>
+          <li>
+            <a href="https://github.com/munyi-victor/django-profile"
+              >Django Profile</a
+            >
+            <p>
+              A simple Django application that allows users to create, edit, and publish their profiles.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/munyi-victor/blog"
+              >React Blog</a
+            >
+            <p>
+              A simple React application that allows users to create, edit and publish their blogs.
+            </p
+          </li>
+          <li>
+            <a href="https://github.com/munyi-victor/masoko"
+              >Masoko</a
+            >
+            <p>
+              A simple e-commerce application made with Vue to help people sell and purchase goods online.
+            </p
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-body h-100">
+        <h4>How to contact me</h4>
+        <hr/>
+        <p>For any inquiries or consultancy, you can contact me through:<br/>
+          <ul>
+            <li>+254708905136</li>
+            <li>+254756823682</li>
+          </ul>
+          <ul class="list-unstyled mt-2">
+            <div class="row">
+              <div class="col-md-3">
+                <i class="fas fa-envelope fs-3"></i>
+                <li class="mt-1"><a href="mailto:munyivictor6@gmail.com">EMAIL</a></li>
+              </div>
+              <div class="col-md-3">
+                <i class="fab fa-linkedin fs-3"></i>
+                <li class="mt-1"><a href="https://www.linkedin.com/in/munyi-victor/">LinkedIn</a></li>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <i class="fab fa-github fs-3"></i>
+                <li class="mt-1"><a href="https://github.com/munyi-victor">Github</a></li>
+              </div>
+              <div class="col-md-3">
+                <i class="fab fa-twitter fs-3"></i>
+                <li class="mt-1"><a href="https://twitter.com/munyi_victor">Twitter</a></li>
+              </div>
+            </div>
+            {% comment %} <li><a href="https://www.instagram.com/munyi_victor/">Instagram</a></li> {% endcomment %}
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
